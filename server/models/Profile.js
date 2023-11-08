@@ -1,8 +1,9 @@
-const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
+const { Schema, model } = require('mongoose')
+const bcrypt = require('bcrypt')
+const { tourSchema } = require('./Tour')
 
 const profileSchema = new Schema({
-  name: {
+  username: {
     type: String,
     required: true,
     unique: true,
@@ -19,12 +20,7 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  skills: [
-    {
-      type: String,
-      trim: true,
-    },
-  ],
+  tours: [tourSchema],
 });
 
 // set up pre-save middleware to create password
