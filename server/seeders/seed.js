@@ -7,44 +7,44 @@ const lukeCombsTourData = require('./lukeCombsTourData.json');
 
 const cleanDB = require('./cleanDB');
 
-const mapTicketMasterEventsToStanzEvents = ( ticketmasterEvents=[ ])=> {
+const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
 
-  return ticketmasterEvents.map(event =>{
+  return ticketmasterEvents.map(event => {
     const venue = event._embedded.venues[0]
     return {
       venue: venue.name,
-      dateTime:event.dates.start.dateTime,
-      city:venue.city.name, 
-      state:venue.state.stateCode,
+      dateTime: event.dates.start.dateTime,
+      city: venue.city.name,
+      state: venue.state.stateCode,
       geoPoint: {
         lat: venue.location.latitude,
         long: venue.location.longitude,
       }
-      
+
 
     }
   })
-} 
+}
 
 const artist = 'lukecombs'
 
-db.once('open', async () => 
-{ 
+db.once('open', async () => {
   try {
-    await  cleanDB('Tour', 'tours')
-    
+    await cleanDB('Tour', 'tours')
+
     await cleanDB('Profile', 'profiles');
-    
-   const profiles= await Profile.create(profileSeeds);
-    const stops =  mapTicketMasterEventsToStanzEvents(lukeCombsTourData._embedded.events)
-    
-    await Tour.create({
-      artist, 
-      stops, 
-      user: profiles[0]._id
+
+    const profiles = await Profile.create(profileSeeds);
+    const stops = mapTicketMasterEventsToStanzEvents(lukeCombsTourData._embedded.events)
+    const userId = profiles[0]._id
+    const tour = await Tour.create({
+      artist,
+      stops,
+      user: userId
     })
-   
-  
+
+    await Profile.findByIdAndUpdate(userId, { $push: { tours: tour._id } })
+
     console.log('all done!');
     process.exit(0);
   } catch (err) {

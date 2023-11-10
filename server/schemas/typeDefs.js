@@ -4,15 +4,41 @@ const typeDefs = `
     name: String
     email: String
     password: String
-    skills: [String]!
+    tours: [Tour]
   }
   
 
   type Tour {
     _id: ID!
     artist: String!
-    user: [Profile]
+    user: ID!
+    stops: [Stop]
+  }
 
+  input TourInput {
+    _id: ID
+    artist: String
+    user: ID
+    stops: [StopInput]
+  }
+
+  input StopInput {
+    _id: ID
+    city: String
+    state: String
+    dates: [String]
+    geopoint: GeopointInput
+    venue: String
+  }
+
+  type Geopoint {
+    lat: String!
+    long: String!
+  }
+
+  input GeopointInput {
+    lat: String!
+    long: String!
   }
 
   type Stop {
@@ -20,10 +46,7 @@ const typeDefs = `
     city: String!
     state: String!
     dates: [String!]
-    geopoint: {
-      lat: String!
-      long: String!
-    }
+    geopoint: Geopoint
     venue: String
   }
 
@@ -36,7 +59,9 @@ const typeDefs = `
     profiles: [Profile]!
     profile(profileId: ID!): Profile
     tours: [Tour]
-    stops: [Stop]
+    # stops: [Stop]
+    tour(_id: ID!) : Tour
+    # stop()
 
   }
 
