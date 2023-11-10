@@ -1,4 +1,4 @@
-const { Profile } = require('../models');
+const { Profile, Tour, Stop } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
@@ -10,6 +10,22 @@ const resolvers = {
     profile: async (parent, { profileId }) => {
       return Profile.findOne({ _id: profileId });
     },
+
+    tours: async () => {
+      return Tour.find()
+    },
+
+    tour: async (parent, { tourId}) => {
+      return Tour.findOne({_id: tourId})
+    },
+
+    stops: async () => {
+      return Stop.find()
+    },
+
+    stop: async (parent, { tourId}) => {
+      return Tour.findOne({_id: tourId})
+    }
   },
 
   Mutation: {
@@ -57,6 +73,29 @@ const resolvers = {
         { $pull: { skills: skill } },
         { new: true }
       );
+    },
+
+    saveTour: async (parent, { newTour }, context) => {
+      if (context.tour) {
+        const updatedTour = await Tour.findByIdAndUpdate(
+          { _id: context.tour._id },
+          { $push: { savedTours: newTour }},
+          { new: true, runValidators: true }
+        );
+        return updatedTour;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
+    removeBook: async (parent, { tourId }, context) => {
+      if (context.tour) {
+        const updatedTour = await Tour.findByIdAndUpdate(
+          { _id: context.tour._id },
+          { $pull: { savedTours: { tourId }}},
+          { new: true }
+        );
+        return updatedTour;
+      }
+      throw new AuthenticationError('You need to be logged in!');
     },
   },
 };
