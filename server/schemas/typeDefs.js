@@ -26,8 +26,8 @@ const typeDefs = `
     _id: ID
     city: String
     state: String
-    dates: [String]
-    geopoint: GeopointInput
+    dateTime: String
+    geoPoint: GeopointInput
     venue: String
   }
 
@@ -45,8 +45,8 @@ const typeDefs = `
     _id: ID
     city: String!
     state: String!
-    dates: [String!]
-    geopoint: Geopoint
+    dateTime: String
+    geoPoint: Geopoint
     venue: String
   }
 

@@ -4,19 +4,19 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 const resolvers = {
   Query: {
     profiles: async () => {
-      return Profile.find();
+      return Profile.find().populate('tours');
     },
 
     profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
+      return Profile.findOne({ _id: profileId }).populate('tours');
     },
 
     tours: async () => {
       return Tour.find()
     },
 
-    tour: async (parent, { tourId }) => {
-      return Tour.findOne({ _id: tourId })
+    tour: async (parent, { _id }) => {
+      return Tour.findOne({ _id })
     },
 
     // stops: async () => {
