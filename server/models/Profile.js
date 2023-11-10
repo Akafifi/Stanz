@@ -1,9 +1,9 @@
 const { Schema, model } = require('mongoose')
 const bcrypt = require('bcrypt')
-const tourSchema  = require('./Tour')
+const tourSchema = require('./Tour')
 
 const profileSchema = new Schema({
-  username: {
+  name: {
     type: String,
     required: true,
     unique: true,
@@ -24,10 +24,10 @@ const profileSchema = new Schema({
     type: [
       {
         type: Schema.Types.ObjectId,
-          ref: "Tour"
+        ref: "Tour"
       }
     ],
-    default:[]
+    default: []
   },
 });
 

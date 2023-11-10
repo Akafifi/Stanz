@@ -11,7 +11,7 @@ const typeDefs = `
   type Tour {
     _id: ID!
     artist: String!
-    user: ID!
+    user: Profile
     stops: [Stop]
   }
 
@@ -68,12 +68,9 @@ const typeDefs = `
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    saveTour(_id: ID!, tour: TourInput!): Profile
-    deleteTour(_id: ID!, tourId: ID!): Profile
-
-    addSkill(profileId: ID!, skill: String!): Profile
+    saveTour(tour: TourInput!): Tour
+    deleteTour(_id: ID!, tourId: ID!): Tour
     removeProfile(profileId: ID!): Profile
-    removeSkill(profileId: ID!, skill: String!): Profile
   }
 `;
 

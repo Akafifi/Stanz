@@ -1,10 +1,8 @@
 [
   {
-    "username": "Brian Kernighan",
+    "name": "Brian Kernighan",
     "email": "bkernighan@techfriends.dev",
     "password": "password01",
     "tours": []
   }
-  
-  
 ]

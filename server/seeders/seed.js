@@ -11,7 +11,7 @@ const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
 
   return ticketmasterEvents.map(event => {
     const venue = event._embedded.venues[0]
-    console.log(typeof event.dates.start.dateTime)
+    console.log(event.dates.start.dateTime)
     return {
       venue: venue.name,
       dateTime: event.dates.start.dateTime,

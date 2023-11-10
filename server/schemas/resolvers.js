@@ -12,20 +12,12 @@ const resolvers = {
     },
 
     tours: async () => {
-      return Tour.find()
+      return Tour.find().populate('user')
     },
 
     tour: async (parent, { _id }) => {
-      return Tour.findOne({ _id })
+      return Tour.findOne({ _id }).populate('user')
     },
-
-    // stops: async () => {
-    //   return Stop.find()
-    // },
-
-    // stop: async (parent, { tourId}) => {
-    //   return Tour.findOne({_id: tourId})
-    // }
   },
 
   Mutation: {
@@ -54,17 +46,14 @@ const resolvers = {
     removeProfile: async (parent, { profileId }) => {
       return Profile.findOneAndDelete({ _id: profileId });
     },
-    saveTour: async (parent, { newTour }, context) => {
-      if (context.tour) {
-        const updatedTour = await Tour.findByIdAndUpdate(
-          { _id: context.tour._id },
-          { $push: { savedTours: newTour } },
-          { new: true, runValidators: true }
-        );
-        return updatedTour;
-      }
+    saveTour: async (parent, { tour }, context) => {
+      // if (context.user) {
+      const updatedTour = (await Tour.create(tour)).populate('user');
+      return updatedTour;
+      // }
       throw new AuthenticationError('You need to be logged in!');
     },
+
   },
 };
 
