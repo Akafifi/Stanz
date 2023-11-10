@@ -1,0 +1,2709 @@
+{
+    "_embedded": {
+      "events": [
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJfvZ",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJfvZ",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T17:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-06-02T00:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-06-01",
+              "localTime": "17:45:00",
+              "dateTime": "2024-06-02T00:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.statefarmstadium.com/",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-glendale-arizona-06-01-2024/event/Zu0FM1R0e5tflD0",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJfvZ?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/ZFr9jZA77k?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "State Farm Stadium",
+                "type": "venue",
+                "id": "ZFr9jZA77k",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "85303",
+                "timezone": "America/Phoenix",
+                "city": {
+                  "name": "Glendale"
+                },
+                "state": {
+                  "name": "Arizona",
+                  "stateCode": "AZ"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "1 Cardinals Drive",
+                  "line2": "Glendale, AZ"
+                },
+                "location": {
+                  "longitude": "-112.2202",
+                  "latitude": "33.5312"
+                },
+                "dmas": [
+                  {
+                    "id": 359
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 6,
+                  "ticketmaster": 6,
+                  "_total": 12,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/ZFr9jZA77k?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJfve",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJfve",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T17:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-06-01T00:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-05-31",
+              "localTime": "17:45:00",
+              "dateTime": "2024-06-01T00:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.statefarmstadium.com/",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-glendale-arizona-05-31-2024/event/Zu0FM1R0e5tflDn",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJfve?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/ZFr9jZA77k?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "State Farm Stadium",
+                "type": "venue",
+                "id": "ZFr9jZA77k",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "85303",
+                "timezone": "America/Phoenix",
+                "city": {
+                  "name": "Glendale"
+                },
+                "state": {
+                  "name": "Arizona",
+                  "stateCode": "AZ"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "1 Cardinals Drive",
+                  "line2": "Glendale, AZ"
+                },
+                "location": {
+                  "longitude": "-112.2202",
+                  "latitude": "33.5312"
+                },
+                "dmas": [
+                  {
+                    "id": 359
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 6,
+                  "ticketmaster": 6,
+                  "_total": 12,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/ZFr9jZA77k?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJfvd",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJfvd",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T15:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-08-10T22:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-08-10",
+              "localTime": "17:45:00",
+              "dateTime": "2024-08-10T22:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.nrgpark.com",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-houston-texas-08-10-2024/event/Z7r9jZ1AdJfvd",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJfvd?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/ZFr9jZdAee?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "NRG Stadium",
+                "type": "venue",
+                "id": "ZFr9jZdAee",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "77054",
+                "timezone": "America/Chicago",
+                "city": {
+                  "name": "Houston"
+                },
+                "state": {
+                  "name": "Texas",
+                  "stateCode": "TX"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "One NRG Park",
+                  "line2": "Houston, TX"
+                },
+                "location": {
+                  "longitude": "-95.400101",
+                  "latitude": "29.6835"
+                },
+                "dmas": [
+                  {
+                    "id": 300
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 24,
+                  "ticketmaster": 17,
+                  "_total": 41,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/ZFr9jZdAee?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJK0o",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJK0o",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T14:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-07-27T21:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-07-27",
+              "localTime": "17:45:00",
+              "dateTime": "2024-07-27T21:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.redskins.com/stadium/",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-landover-maryland-07-27-2024/event/Z7r9jZ1AdJK0o",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "seatmap": {
+            "staticUrl": "https://content.resale.ticketmaster.com/maps/549-1-1-main.gif"
+          },
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJK0o?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "FedEx Field",
+                "type": "venue",
+                "id": "Z6r9jZkA1e",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "20785",
+                "timezone": "America/New_York",
+                "city": {
+                  "name": "Landover"
+                },
+                "state": {
+                  "name": "Maryland",
+                  "stateCode": "MD"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "1600 FedEx Way"
+                },
+                "location": {
+                  "longitude": "-76.872101",
+                  "latitude": "38.918301"
+                },
+                "dmas": [
+                  {
+                    "id": 409
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 3,
+                  "ticketmaster": 4,
+                  "_total": 7,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJfvv",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJfvv",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T15:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-08-09T22:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-08-09",
+              "localTime": "17:45:00",
+              "dateTime": "2024-08-09T22:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.nrgpark.com",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-houston-texas-08-09-2024/event/Z7r9jZ1AdJfvv",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJfvv?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/ZFr9jZdAee?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "NRG Stadium",
+                "type": "venue",
+                "id": "ZFr9jZdAee",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "77054",
+                "timezone": "America/Chicago",
+                "city": {
+                  "name": "Houston"
+                },
+                "state": {
+                  "name": "Texas",
+                  "stateCode": "TX"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "One NRG Park",
+                  "line2": "Houston, TX"
+                },
+                "location": {
+                  "longitude": "-95.400101",
+                  "latitude": "29.6835"
+                },
+                "dmas": [
+                  {
+                    "id": 300
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 24,
+                  "ticketmaster": 17,
+                  "_total": 41,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/ZFr9jZdAee?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1AdJK03",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdJK03",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T14:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-07-26T21:45:00Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-07-26",
+              "localTime": "17:45:00",
+              "dateTime": "2024-07-26T21:45:00Z",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": false,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.redskins.com/stadium/",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-landover-maryland-07-26-2024/event/Z7r9jZ1AdJK03",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "seatmap": {
+            "staticUrl": "https://content.resale.ticketmaster.com/maps/549-1-1-main.gif"
+          },
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1AdJK03?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "FedEx Field",
+                "type": "venue",
+                "id": "Z6r9jZkA1e",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "20785",
+                "timezone": "America/New_York",
+                "city": {
+                  "name": "Landover"
+                },
+                "state": {
+                  "name": "Maryland",
+                  "stateCode": "MD"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "1600 FedEx Way"
+                },
+                "location": {
+                  "longitude": "-76.872101",
+                  "latitude": "38.918301"
+                },
+                "dmas": [
+                  {
+                    "id": 409
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 3,
+                  "ticketmaster": 4,
+                  "_total": 7,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Luke Combs",
+          "type": "event",
+          "id": "Z7r9jZ1A7Ze4z",
+          "test": false,
+          "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Ze4z",
+          "locale": "en-us",
+          "images": [
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "height": 1152,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "height": 203,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "height": 360,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "height": 115,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+              "width": 2426,
+              "height": 1634,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "height": 56,
+              "fallback": false
+            },
+            {
+              "ratio": "4_3",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+              "width": 305,
+              "height": 225,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "height": 427,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "height": 576,
+              "fallback": false
+            },
+            {
+              "ratio": "16_9",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "height": 639,
+              "fallback": false
+            },
+            {
+              "ratio": "3_2",
+              "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "height": 683,
+              "fallback": false
+            }
+          ],
+          "sales": {
+            "public": {
+              "startDateTime": "2023-08-25T14:00:00Z",
+              "startTBD": false,
+              "startTBA": false,
+              "endDateTime": "2024-07-27T03:59:20Z"
+            }
+          },
+          "dates": {
+            "start": {
+              "localDate": "2024-07-26",
+              "dateTBD": false,
+              "dateTBA": false,
+              "timeTBA": true,
+              "noSpecificTime": false
+            },
+            "status": {
+              "code": "onsale"
+            },
+            "spanMultipleDays": false
+          },
+          "classifications": [
+            {
+              "primary": true,
+              "segment": {
+                "id": "KZFzniwnSyZfZ7v7nJ",
+                "name": "Music"
+              },
+              "genre": {
+                "id": "KnvZfZ7vAvl",
+                "name": "Other"
+              },
+              "subGenre": {
+                "id": "KZazBEonSMnZfZ7vk1I",
+                "name": "Other"
+              },
+              "family": false
+            }
+          ],
+          "outlets": [
+            {
+              "url": "https://www.redskins.com/stadium/",
+              "type": "venueBoxOffice"
+            },
+            {
+              "url": "https://www.ticketmaster.com/luke-combs-landover-maryland-07-26-2024/event/Z7r9jZ1A7Ze4z",
+              "type": "tmMarketPlace"
+            }
+          ],
+          "seatmap": {
+            "staticUrl": "https://content.resale.ticketmaster.com/maps/549-1-1-main.gif"
+          },
+          "ticketing": {
+            "allInclusivePricing": {
+              "enabled": false
+            }
+          },
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/events/Z7r9jZ1A7Ze4z?locale=en-us"
+            },
+            "attractions": [
+              {
+                "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+              }
+            ],
+            "venues": [
+              {
+                "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+              }
+            ]
+          },
+          "_embedded": {
+            "venues": [
+              {
+                "name": "FedEx Field",
+                "type": "venue",
+                "id": "Z6r9jZkA1e",
+                "test": false,
+                "locale": "en-us",
+                "postalCode": "20785",
+                "timezone": "America/New_York",
+                "city": {
+                  "name": "Landover"
+                },
+                "state": {
+                  "name": "Maryland",
+                  "stateCode": "MD"
+                },
+                "country": {
+                  "name": "United States Of America",
+                  "countryCode": "US"
+                },
+                "address": {
+                  "line1": "1600 FedEx Way"
+                },
+                "location": {
+                  "longitude": "-76.872101",
+                  "latitude": "38.918301"
+                },
+                "dmas": [
+                  {
+                    "id": 409
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 3,
+                  "ticketmaster": 4,
+                  "_total": 7,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/venues/Z6r9jZkA1e?locale=en-us"
+                  }
+                }
+              }
+            ],
+            "attractions": [
+              {
+                "name": "Luke Combs",
+                "type": "attraction",
+                "id": "K8vZ917KVr7",
+                "test": false,
+                "url": "https://www.ticketmaster.com/luke-combs-tickets/artist/2150342",
+                "locale": "en-us",
+                "externalLinks": {
+                  "youtube": [
+                    {
+                      "url": "https://www.youtube.com/channel/UCOSIXyYdT93OzpRnAuWaKjQ"
+                    }
+                  ],
+                  "twitter": [
+                    {
+                      "url": "https://twitter.com/lukecombs"
+                    }
+                  ],
+                  "itunes": [
+                    {
+                      "url": "https://music.apple.com/us/artist/luke-combs/815635315"
+                    }
+                  ],
+                  "lastfm": [
+                    {
+                      "url": "https://www.last.fm/music/Luke+Combs"
+                    }
+                  ],
+                  "facebook": [
+                    {
+                      "url": "https://www.facebook.com/LukeCombs/"
+                    }
+                  ],
+                  "spotify": [
+                    {
+                      "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+                    }
+                  ],
+                  "wiki": [
+                    {
+                      "url": "https://en.wikipedia.org/wiki/Luke_Combs"
+                    }
+                  ],
+                  "musicbrainz": [
+                    {
+                      "id": "c20ee61f-071f-4e65-9c81-45ee931a54ce"
+                    }
+                  ],
+                  "instagram": [
+                    {
+                      "url": "https://www.instagram.com/lukecombs/"
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "url": "https://www.lukecombs.com/"
+                    }
+                  ]
+                },
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_SOURCE",
+                    "width": 2426,
+                    "height": 1634,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "https://s1.ticketm.net/dam/a/30e/f1fc2247-0788-449e-8288-148816ed130e_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    },
+                    "type": {
+                      "id": "KZAyXgnZfZ7v7la",
+                      "name": "Individual"
+                    },
+                    "subType": {
+                      "id": "KZFzBErXgnZfZ7vAd7",
+                      "name": "Musician"
+                    },
+                    "family": false
+                  }
+                ],
+                "upcomingEvents": {
+                  "tmr": 15,
+                  "ticketmaster": 22,
+                  "_total": 37,
+                  "_filtered": 0
+                },
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917KVr7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/discovery/v2/events.json?keyword=lukecombs&segmentName=Music"
+      }
+    },
+    "page": {
+      "size": 20,
+      "totalElements": 7,
+      "totalPages": 1,
+      "number": 0
+    }
+  }

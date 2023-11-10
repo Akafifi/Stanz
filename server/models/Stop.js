@@ -1,9 +1,9 @@
-const { Schema, model } = require('mongoose')
+const { Schema } = require('mongoose')
 
 const stopSchema = new Schema({
   city: String,
   state: String,
-  dates: [String],
+  dateTime: String,
   geoPoint: {
     lat: String,
     long: String
@@ -11,4 +11,4 @@ const stopSchema = new Schema({
   venue: String,
 })
 
-module.exports = { stopSchema }
+module.exports = stopSchema 

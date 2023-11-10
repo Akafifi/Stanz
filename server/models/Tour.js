@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose')
-const { stopSchema } = require('./Stop')
+const stopSchema  = require('./Stop')
 
 const tourSchema = new Schema({
   artist: String,
@@ -12,4 +12,4 @@ const tourSchema = new Schema({
 
 const Tour = model('Tour', tourSchema)
 
-module.exports = { Tour, tourSchema }
+module.exports = Tour;

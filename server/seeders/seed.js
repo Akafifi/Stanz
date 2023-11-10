@@ -1,17 +1,54 @@
 const db = require('../config/connection');
-const { Profile } = require('../models');
+const { Profile, Tour } = require('../models');
 const profileSeeds = require('./profileSeeds.json');
+
+const lukeCombsTourData = require('./lukeCombsTourData.json');
+
+
 const cleanDB = require('./cleanDB');
 
-db.once('open', async () => {
+const mapTicketMasterEventsToStanzEvents = ( ticketmasterEvents=[ ])=> {
+
+  return ticketmasterEvents.map(event =>{
+    const venue = event._embedded.venues[0]
+    return {
+      venue: venue.name,
+      dateTime:event.dates.start.dateTime,
+      city:venue.city.name, 
+      state:venue.state.stateCode,
+      geoPoint: {
+        lat: venue.location.latitude,
+        long: venue.location.longitude,
+      }
+      
+
+    }
+  })
+} 
+
+const artist = 'lukecombs'
+
+db.once('open', async () => 
+{ 
   try {
+    await  cleanDB('Tour', 'tours')
+    
     await cleanDB('Profile', 'profiles');
     
-    await Profile.create(profileSeeds);
-
+   const profiles= await Profile.create(profileSeeds);
+    const stops =  mapTicketMasterEventsToStanzEvents(lukeCombsTourData._embedded.events)
+    
+    await Tour.create({
+      artist, 
+      stops, 
+      user: profiles[0]._id
+    })
+   
+  
     console.log('all done!');
     process.exit(0);
   } catch (err) {
     throw err;
   }
 });
+
