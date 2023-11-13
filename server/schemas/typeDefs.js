@@ -16,14 +16,12 @@ const typeDefs = `
   }
 
   input TourInput {
-    _id: ID
     artist: String
     user: ID
     stops: [StopInput]
   }
 
   input StopInput {
-    _id: ID
     city: String
     state: String
     dateTime: String
