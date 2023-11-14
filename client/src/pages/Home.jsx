@@ -89,7 +89,7 @@ const Home = () => {
 
       <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
+        bootstrapURLKeys={{ key: "AIzaSyBoQHlU4edUPiQH1TPsRRc2bhtV8nhCAK8" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
@@ -97,7 +97,7 @@ const Home = () => {
         return <MapPin stop={stop} lat= {
           stop.geoPoint.lat
         }
-        lon= {
+        lng= {
           stop.geoPoint.long
         }/>
        })} 
