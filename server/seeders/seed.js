@@ -37,6 +37,7 @@ db.once('open', async () => {
 
     const profiles = await Profile.create(profileSeeds);
     const stops = mapTicketMasterEventsToStanzEvents(lukeCombsTourData._embedded.events)
+    console.log(stops)
     const userId = profiles[0]._id
     const tour = await Tour.create({
       artist,
