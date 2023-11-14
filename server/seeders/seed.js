@@ -22,8 +22,8 @@ const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
         long: venue.location.longitude,
       }
 
-
     }
+
   })
 }
 
