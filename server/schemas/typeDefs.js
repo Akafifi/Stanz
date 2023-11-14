@@ -42,7 +42,7 @@ const typeDefs = `
   type Stop {
     _id: ID
     city: String!
-    state: String!
+    state: String
     dateTime: String
     geoPoint: Geopoint
     venue: String
