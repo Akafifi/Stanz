@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose')
-const stopSchema  = require('./Stop')
+const { stopSchema }  = require('./Stop')
 
 const tourSchema = new Schema({
   artist: String,

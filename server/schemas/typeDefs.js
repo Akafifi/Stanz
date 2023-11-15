@@ -69,6 +69,7 @@ const typeDefs = `
     saveTour(tour: TourInput!): Tour
     deleteTour(_id: ID!, tourId: ID!): Tour
     removeProfile(profileId: ID!): Profile
+    addStop(city: String, dateTime: String, venue: String): Stop
   }
 `;
 

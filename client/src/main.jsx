@@ -7,8 +7,10 @@ import Profile from './pages/Profile'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import ErrorPage from './pages/Error'
+
 import SearchArtist from './components/SearchArtist.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 const router = createBrowserRouter([
   {

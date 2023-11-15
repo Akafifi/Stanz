@@ -1,4 +1,5 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
+
 
 const stopSchema = new Schema({
   city: String,
@@ -11,4 +12,9 @@ const stopSchema = new Schema({
   venue: String,
 })
 
-module.exports = stopSchema 
+const Stop = model('Stop', stopSchema);
+
+module.exports = {
+  stopSchema,
+  Stop
+}
