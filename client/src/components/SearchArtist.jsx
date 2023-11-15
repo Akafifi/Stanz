@@ -6,18 +6,15 @@ import { map } from 'rxjs'
 import GoogleMapReact from 'google-map-react'
 import MapPin from '../components/mapPin'
 
-
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-//use useMutation hook
-import { useMutation } from '@apollo/client'
-import {ADD_EVENT} from '../utils/mutations'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import { ADD_EVENT } from '../utils/mutations'
 
 function SearchArtist() {
   const [search, setSearch] = useState('')
   const [mapPinStops, setMapPinStops] = useState([])
   const [saveTour, {}] = useMutation(SAVE_TOUR)
-  // let mapPinStops = []
+  const [events, setEvents] = useState([])
 
   const defaultProps = {
     center: {
@@ -27,7 +24,7 @@ function SearchArtist() {
     zoom: 3,
   }
 
-  const [saveEvent, {error}] = useMutation(ADD_EVENT)
+  const [saveEvent, { error }] = useMutation(ADD_EVENT)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -80,19 +77,17 @@ function SearchArtist() {
     return
   }
 
-
   function handleSaveEvent(e) {
     const i = e.target.value
-    const eventInfo = events[i];
+    const eventInfo = events[i]
     saveEvent({
       variables: {
         dateTime: eventInfo.dateTime,
         city: eventInfo.city,
-        venue: eventInfo.venue
-      }
+        venue: eventInfo.venue,
+      },
     })
   }
-
 
   return (
     <>
@@ -121,28 +116,26 @@ function SearchArtist() {
         <button onClick={() => handleSearch()}>Search</button>
       </div>
       <div>
-        {
-          events.map((eventData, index) => {
-            return (
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>{eventData.city}</Card.Title>
-                  <Card.Text>
-                    {eventData.dateTime}
-                  </Card.Text>
-                  <Card.Text>
-                    {eventData.venue}
-                  </Card.Text>
-                  <Button variant="primary" onClick={handleSaveEvent} value={index}>Save</Button>
-                </Card.Body>
-              </Card>
-            );
-          }
+        {events.map((eventData, index) => {
+          return (
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>{eventData.city}</Card.Title>
+                <Card.Text>{eventData.dateTime}</Card.Text>
+                <Card.Text>{eventData.venue}</Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={handleSaveEvent}
+                  value={index}
+                >
+                  Save
+                </Button>
+              </Card.Body>
+            </Card>
           )
-        }
+        })}
       </div>
-      )
     </>
   )
 }
