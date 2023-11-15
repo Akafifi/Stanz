@@ -15,7 +15,7 @@ const MapPin = ({ stop }) => {
       </div>
       {isShown && (
         <div className="">
-          <h3> {stop.venue} </h3>
+          <h3 className=""> {stop.venue} </h3>
           <p>
             {stop.city}
             {stop.state}

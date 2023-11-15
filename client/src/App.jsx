@@ -45,7 +45,6 @@ function App() {
         <div className="container">
           <Outlet />
         </div>
-        <SearchArtist></SearchArtist>
         <Footer />
       </div>
     </ApolloProvider>
