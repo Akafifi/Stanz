@@ -3,12 +3,12 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 //use useMutation hook
 import { useMutation } from '@apollo/client'
-//import {ADD_EVEVNT} from '../utils/mutations'
+import {ADD_EVENT} from '../utils/mutations'
 function SearchArtist() {
   const [events, setEvents] = useState([])
   const [search, setSearch] = useState('')
 
-  //const [saveEvent, {error}] = useMutation(ADD_EVENT)
+  const [saveEvent, {error}] = useMutation(ADD_EVENT)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -53,16 +53,16 @@ function SearchArtist() {
       })
   }
 
-  function saveEvent(e) {
+  function handleSaveEvent(e) {
     const i = e.target.value
     const eventInfo = events[i];
-    // saveEvent({
-    //   variables: {
-    //     dateTime: eventInfo.dateTime,
-    //     city: eventInfo.city,
-    //     venue: eventInfo.venue
-    //   }
-    // })
+    saveEvent({
+      variables: {
+        dateTime: eventInfo.dateTime,
+        city: eventInfo.city,
+        venue: eventInfo.venue
+      }
+    })
   }
 
   return (
@@ -88,7 +88,7 @@ function SearchArtist() {
                   <Card.Text>
                     {eventData.venue}
                   </Card.Text>
-                  <Button variant="primary" onClick={saveEvent} value={index}>Save</Button>
+                  <Button variant="primary" onClick={handleSaveEvent} value={index}>Save</Button>
                 </Card.Body>
               </Card>
             );
