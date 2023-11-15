@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client'
 
-import ProfileList from '../components/ProfileList'
+//  import ProfileList from '../components/ProfileList'
 
 import { QUERY_SINGLE_TOUR } from '../utils/queries'
 import GoogleMapReact from 'google-map-react'

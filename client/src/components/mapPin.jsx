@@ -1,7 +1,17 @@
 import { useState } from 'react'
 import pin from '../assets/placeholder.png'
 import moment from 'moment'
+import PropTypes from 'prop-types';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+
+MapPin.propTypes = {
+  stop: PropTypes.shape({
+    dateTime: PropTypes.string.isRequired,
+    venue: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 const MapPin = ({ stop }) => {
   const [isShown, setIsShown] = useState(false)
