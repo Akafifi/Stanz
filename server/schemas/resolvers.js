@@ -54,6 +54,7 @@ const resolvers = {
       return Profile.findOneAndDelete({ _id: profileId });
     },
     saveTour: async (parent, { tour }, context) => {
+      // console.log(tour)
       // if (context.user) {
       const updatedTour = (await Tour.create(tour)).populate('user');
       return updatedTour;

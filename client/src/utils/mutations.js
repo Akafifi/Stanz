@@ -33,6 +33,7 @@ export const ADD_SKILL = gql`
   }
 `;
 
+
 export const LOGIN_USER = gql`
 mutation login($email: String!, $password: String!) {
   login(email: $email, password: $password) {
@@ -45,3 +46,23 @@ mutation login($email: String!, $password: String!) {
   }
 }
 `;
+
+export const SAVE_TOUR = gql`
+mutation SaveTour($tour: TourInput!) {
+  saveTour(tour: $tour) {
+    _id
+    artist
+    stops {
+      _id
+      city
+      dateTime
+      geoPoint {
+        lat
+        long
+      }
+      state
+      venue
+    }
+  }
+}
+`

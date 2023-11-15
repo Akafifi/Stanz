@@ -57,3 +57,24 @@ query profile($profileId: ID!) {
   }
 }
 `;
+
+export const QUERY_SINGLE_TOUR = gql`
+query Query($id: ID!) {
+  tour(_id: $id) {
+    _id
+    artist
+    stops {
+      _id
+      city
+      dateTime
+      geoPoint {
+        lat
+        long
+      }
+      state
+      venue
+    }
+    
+  }
+}
+`

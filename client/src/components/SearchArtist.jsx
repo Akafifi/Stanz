@@ -1,19 +1,37 @@
+import { useMutation } from '@apollo/client'
 import { useEffect, useState } from 'react'
+
+import { SAVE_TOUR } from '../utils/mutations'
+import { map } from 'rxjs'
+import GoogleMapReact from 'google-map-react'
+import MapPin from '../components/mapPin'
+
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 //use useMutation hook
 import { useMutation } from '@apollo/client'
 import {ADD_EVENT} from '../utils/mutations'
+
 function SearchArtist() {
-  const [events, setEvents] = useState([])
   const [search, setSearch] = useState('')
+  const [mapPinStops, setMapPinStops] = useState([])
+  const [saveTour, {}] = useMutation(SAVE_TOUR)
+  // let mapPinStops = []
+
+  const defaultProps = {
+    center: {
+      lat: 44.5,
+      lng: -89.5,
+    },
+    zoom: 3,
+  }
 
   const [saveEvent, {error}] = useMutation(ADD_EVENT)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
       const venue = event._embedded.venues[0]
-      // console.log(venue)
       return {
         venue: venue.name,
         dateTime: event.dates.start.dateTime,
@@ -27,7 +45,7 @@ function SearchArtist() {
     })
   }
 
-  function handleSearch() {
+  const handleSearch = () => {
     const artistSearch = search
     const apiKey = 'sAhXfNPP7Dsqx1w9AFN1cjEu9BEDeqNK'
     const apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${artistSearch}&segmentName=Music&apikey=${apiKey}`
@@ -39,19 +57,29 @@ function SearchArtist() {
         }
         return response.json()
       })
-      .then((data) => {
-        console.log(data)
-        const mappedEvents = mapTicketMasterEventsToStanzEvents(
-          data._embedded.events,
-        )
-        setEvents(mappedEvents)
-        console.log(mappedEvents)
-        console.log('data =', JSON.stringify(mappedEvents, null, 2))
+      .then(async (data) => {
+        const stops = mapTicketMasterEventsToStanzEvents(data._embedded.events)
+        // console.log('data =', JSON.stringify(stops, null, 2))
+
+        const tour = await saveTour({
+          variables: {
+            tour: {
+              artist: artistSearch,
+              user: localStorage.getItem('id'),
+              stops,
+            },
+          },
+        })
+        setMapPinStops(tour.data.saveTour.stops)
+        console.log('mappins', mapPinStops)
+        console.log('tour', tour)
       })
       .catch((error) => {
         console.error('Fetch error:', error)
       })
+    return
   }
+
 
   function handleSaveEvent(e) {
     const i = e.target.value
@@ -65,8 +93,26 @@ function SearchArtist() {
     })
   }
 
+
   return (
     <>
+      <div style={{ height: '50vh', width: '50%' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: 'AIzaSyBoQHlU4edUPiQH1TPsRRc2bhtV8nhCAK8' }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+        >
+          {mapPinStops.map((stop) => {
+            return (
+              <MapPin
+                stop={stop}
+                lat={stop.geoPoint.lat}
+                lng={stop.geoPoint.long}
+              />
+            )
+          })}
+        </GoogleMapReact>
+      </div>
       <div className="container">
         <input
           placeholder="Search Artist"
