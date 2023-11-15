@@ -3,18 +3,15 @@ import { useState } from 'react'
 import { SAVE_TOUR } from '../utils/mutations'
 import GoogleMapReact from 'google-map-react'
 import MapPin from '../components/mapPin'
-import InputGroup from 'react-bootstrap/InputGroup'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
-
+import { Card, Button, InputGroup, FormControl } from 'react-bootstrap'
 import { ADD_EVENT } from '../utils/mutations'
-import { FormControl } from 'react-bootstrap'
 
 function SearchArtist() {
   const [search, setSearch] = useState('')
   const [mapPinStops, setMapPinStops] = useState([])
   const [saveTour, {}] = useMutation(SAVE_TOUR)
   const [events, setEvents] = useState([])
+  const [saveEvent, { error }] = useMutation(ADD_EVENT)
 
   const defaultProps = {
     center: {
@@ -23,8 +20,6 @@ function SearchArtist() {
     },
     zoom: 4,
   }
-
-  const [saveEvent, { error }] = useMutation(ADD_EVENT)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -56,8 +51,6 @@ function SearchArtist() {
       })
       .then(async (data) => {
         const stops = mapTicketMasterEventsToStanzEvents(data._embedded.events)
-        // console.log('data =', JSON.stringify(stops, null, 2))
-
         const tour = await saveTour({
           variables: {
             tour: {
@@ -68,8 +61,6 @@ function SearchArtist() {
           },
         })
         setMapPinStops(tour.data.saveTour.stops)
-        console.log('mappins', mapPinStops)
-        console.log('tour', tour)
       })
       .catch((error) => {
         console.error('Fetch error:', error)
@@ -118,7 +109,7 @@ function SearchArtist() {
             placeholder="Search Artist"
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Button className="" onClick={() => handleSearch()}>
+          <Button className="bg-success" onClick={() => handleSearch()}>
             Search
           </Button>
         </InputGroup>

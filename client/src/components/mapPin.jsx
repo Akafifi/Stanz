@@ -5,7 +5,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 const MapPin = ({ stop }) => {
   const [isShown, setIsShown] = useState(false)
-  const date = moment(stop.dateTime).format('YYYY/MM/DD h:mm:ss')
+  const date = moment(stop.dateTime).format('MM/DD/YYYY h:mm')
 
   return (
     <>
@@ -16,7 +16,7 @@ const MapPin = ({ stop }) => {
         <img src={pin} alt="" style={{ width: 20 }} />
       </div>
       {isShown && (
-        <Card className="bg-success text-light" style={{ width: 100 }}>
+        <Card className="bg-success text-light z-2" style={{ width: 150 }}>
           <h6 className="text-center p-1"> {stop.venue} </h6>
           <ListGroup className="text-center list-group ">
             <ListGroupItem className="">
