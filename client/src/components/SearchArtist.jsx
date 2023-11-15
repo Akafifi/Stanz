@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 
 function SearchArtist() {
-  const [events, setEvents] = useState([])
   const [search, setSearch] = useState('')
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
       const venue = event._embedded.venues[0]
-      // console.log(venue)
       return {
         venue: venue.name,
         dateTime: event.dates.start.dateTime,
@@ -21,7 +19,7 @@ function SearchArtist() {
     })
   }
 
-  function handleSearch() {
+  const handleSearch = () => {
     const artistSearch = search
     const apiKey = 'sAhXfNPP7Dsqx1w9AFN1cjEu9BEDeqNK'
     const apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${artistSearch}&segmentName=Music&apikey=${apiKey}`
@@ -43,7 +41,9 @@ function SearchArtist() {
       .catch((error) => {
         console.error('Fetch error:', error)
       })
+    return
   }
+
   return (
     <>
       <div className="container">
@@ -53,6 +53,7 @@ function SearchArtist() {
         />
         <button onClick={() => handleSearch()}>Search</button>
       </div>
+      <div></div>
     </>
   )
 }
