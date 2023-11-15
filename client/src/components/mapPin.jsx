@@ -1,9 +1,11 @@
 import { useState } from 'react'
-import SearchArtist from './SearchArtist'
 import pin from '../assets/placeholder.png'
+import moment from 'moment'
+import { Card } from 'react-bootstrap'
 
 const MapPin = ({ stop }) => {
   const [isShown, setIsShown] = useState(false)
+  const date = moment(stop.dateTime).format('YYYY/MM/DD h:mm:ss')
 
   return (
     <>
@@ -14,13 +16,15 @@ const MapPin = ({ stop }) => {
         <img src={pin} alt="" style={{ width: 20 }} />
       </div>
       {isShown && (
-        <div className="">
-          <h3 className=""> {stop.venue} </h3>
-          <p>
-            {stop.city}
-            {stop.state}
-          </p>
-        </div>
+        <Card className="bg-warning" style={{ width: 100 }}>
+          <h6 className="text-center"> {stop.venue} </h6>
+          <ul className="text-center list-group text-decoration-none">
+            <li className="">
+              {stop.city}, {stop.state}
+            </li>
+            <li>{date}</li>
+          </ul>
+        </Card>
       )}
     </>
   )

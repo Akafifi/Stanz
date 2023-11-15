@@ -1,14 +1,14 @@
 import { useMutation } from '@apollo/client'
-import { useEffect, useState } from 'react'
-
+import { useState } from 'react'
 import { SAVE_TOUR } from '../utils/mutations'
-import { map } from 'rxjs'
 import GoogleMapReact from 'google-map-react'
 import MapPin from '../components/mapPin'
-
+import InputGroup from 'react-bootstrap/InputGroup'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+
 import { ADD_EVENT } from '../utils/mutations'
+import { FormControl } from 'react-bootstrap'
 
 function SearchArtist() {
   const [search, setSearch] = useState('')
@@ -18,10 +18,10 @@ function SearchArtist() {
 
   const defaultProps = {
     center: {
-      lat: 44.5,
-      lng: -89.5,
+      lat: 37.1,
+      lng: -95.5,
     },
-    zoom: 3,
+    zoom: 4,
   }
 
   const [saveEvent, { error }] = useMutation(ADD_EVENT)
@@ -90,8 +90,11 @@ function SearchArtist() {
   }
 
   return (
-    <>
-      <div style={{ height: '50vh', width: '50%' }}>
+    <div className="container d-flex flex-column align-items-center">
+      <div
+        style={{ height: '50vh', width: '50%' }}
+        className="m-4 border border-2 shadow"
+      >
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyBoQHlU4edUPiQH1TPsRRc2bhtV8nhCAK8' }}
           defaultCenter={defaultProps.center}
@@ -108,12 +111,17 @@ function SearchArtist() {
           })}
         </GoogleMapReact>
       </div>
-      <div className="container">
-        <input
-          placeholder="Search Artist"
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <button onClick={() => handleSearch()}>Search</button>
+      <div className="d-flex">
+        <InputGroup>
+          <FormControl
+            className="col-10"
+            placeholder="Search Artist"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <Button className="" onClick={() => handleSearch()}>
+            Search
+          </Button>
+        </InputGroup>
       </div>
       <div>
         {events.map((eventData, index) => {
@@ -136,7 +144,7 @@ function SearchArtist() {
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
