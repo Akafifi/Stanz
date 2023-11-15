@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react'
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+//use useMutation hook
+import { useMutation } from '@apollo/client'
+//import {ADD_EVEVNT} from '../utils/mutations'
 function SearchArtist() {
   const [events, setEvents] = useState([])
   const [search, setSearch] = useState('')
+
+  //const [saveEvent, {error}] = useMutation(ADD_EVENT)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -38,12 +44,27 @@ function SearchArtist() {
         const mappedEvents = mapTicketMasterEventsToStanzEvents(
           data._embedded.events,
         )
+        setEvents(mappedEvents)
+        console.log(mappedEvents)
         console.log('data =', JSON.stringify(mappedEvents, null, 2))
       })
       .catch((error) => {
         console.error('Fetch error:', error)
       })
   }
+
+  function saveEvent(e) {
+    const i = e.target.value
+    const eventInfo = events[i];
+    // saveEvent({
+    //   variables: {
+    //     dateTime: eventInfo.dateTime,
+    //     city: eventInfo.city,
+    //     venue: eventInfo.venue
+    //   }
+    // })
+  }
+
   return (
     <>
       <div className="container">
@@ -53,6 +74,29 @@ function SearchArtist() {
         />
         <button onClick={() => handleSearch()}>Search</button>
       </div>
+      <div>
+        {
+          events.map((eventData, index) => {
+            return (
+              <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                  <Card.Title>{eventData.city}</Card.Title>
+                  <Card.Text>
+                    {eventData.dateTime}
+                  </Card.Text>
+                  <Card.Text>
+                    {eventData.venue}
+                  </Card.Text>
+                  <Button variant="primary" onClick={saveEvent} value={index}>Save</Button>
+                </Card.Body>
+              </Card>
+            );
+          }
+          )
+        }
+      </div>
+      )
     </>
   )
 }
