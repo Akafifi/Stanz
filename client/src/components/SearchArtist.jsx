@@ -1,7 +1,10 @@
+import { useMutation } from '@apollo/client'
 import { useEffect, useState } from 'react'
+import { SAVE_TOUR } from '../utils/mutations'
 
 function SearchArtist() {
   const [search, setSearch] = useState('')
+  const [saveTour, {}] = useMutation(SAVE_TOUR)
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -32,11 +35,18 @@ function SearchArtist() {
         return response.json()
       })
       .then((data) => {
-        console.log(data)
-        const mappedEvents = mapTicketMasterEventsToStanzEvents(
-          data._embedded.events,
-        )
-        console.log('data =', JSON.stringify(mappedEvents, null, 2))
+        const stops = mapTicketMasterEventsToStanzEvents(data._embedded.events)
+        // console.log('data =', JSON.stringify(stops, null, 2))
+
+        saveTour({
+          variables: {
+            tour: {
+              artist: artistSearch,
+              user: localStorage.getItem('id'),
+              stops,
+            },
+          },
+        })
       })
       .catch((error) => {
         console.error('Fetch error:', error)
