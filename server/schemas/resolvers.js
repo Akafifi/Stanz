@@ -27,6 +27,13 @@ const resolvers = {
 
       return { token, profile };
     },
+    addStop: async (parent, {dateTime, city, venue}) => {
+      const stop = await Stop.create({ city, dateTime, venue });
+
+      return stop
+
+
+    },
     login: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
 
@@ -47,6 +54,7 @@ const resolvers = {
       return Profile.findOneAndDelete({ _id: profileId });
     },
     saveTour: async (parent, { tour }, context) => {
+      // console.log(tour)
       // if (context.user) {
       const updatedTour = (await Tour.create(tour)).populate('user');
       return updatedTour;

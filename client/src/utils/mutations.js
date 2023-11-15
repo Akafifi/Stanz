@@ -13,6 +13,16 @@ mutation addProfile($name: String!, $email: String!, $password: String!) {
 }
 `;
 
+export const ADD_EVENT = gql`
+mutation AddStop($city: String, $dateTime: String, $venue: String) {
+  addStop(city: $city, dateTime: $dateTime, venue: $venue) {
+    city
+    dateTime
+    venue
+  }
+}
+`;
+
 export const ADD_SKILL = gql`
   mutation addSkill($profileId: ID!, $skill: String!) {
     addSkill(profileId: $profileId, skill: $skill) {
@@ -22,6 +32,7 @@ export const ADD_SKILL = gql`
     }
   }
 `;
+
 
 export const LOGIN_USER = gql`
 mutation login($email: String!, $password: String!) {
@@ -35,3 +46,23 @@ mutation login($email: String!, $password: String!) {
   }
 }
 `;
+
+export const SAVE_TOUR = gql`
+mutation SaveTour($tour: TourInput!) {
+  saveTour(tour: $tour) {
+    _id
+    artist
+    stops {
+      _id
+      city
+      dateTime
+      geoPoint {
+        lat
+        long
+      }
+      state
+      venue
+    }
+  }
+}
+`
