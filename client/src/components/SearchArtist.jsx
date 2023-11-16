@@ -58,7 +58,7 @@ function SearchArtist() {
       })
       .catch((error) => {
         console.error('Fetch error:', error)
-        setErrorMessage('Artist data not available')
+        setErrorMessage('Tour data not available')
       })
     return
   }
