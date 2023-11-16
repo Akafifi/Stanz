@@ -66,3 +66,11 @@ mutation SaveTour($tour: TourInput!) {
   }
 }
 `
+
+export const DELETE_TOUR = gql`
+mutation Mutation($_id: ID!) {
+  deleteTour(_id: $_id) {
+    _id
+  }
+}
+`

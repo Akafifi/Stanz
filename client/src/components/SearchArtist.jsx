@@ -1,8 +1,7 @@
 import { useMutation } from '@apollo/client'
 import { useState } from 'react'
 import { SAVE_TOUR } from '../utils/mutations'
-import GoogleMapReact from 'google-map-react'
-import MapPin from '../components/mapPin'
+import Map from './Map'
 import { Card, Button, InputGroup, FormControl } from 'react-bootstrap'
 import { ADD_EVENT } from '../utils/mutations'
 
@@ -12,14 +11,6 @@ function SearchArtist() {
   const [saveTour, {}] = useMutation(SAVE_TOUR)
   const [events, setEvents] = useState([])
   const [saveEvent, { error }] = useMutation(ADD_EVENT)
-
-  const defaultProps = {
-    center: {
-      lat: 37.1,
-      lng: -95.5,
-    },
-    zoom: 4,
-  }
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -82,26 +73,7 @@ function SearchArtist() {
 
   return (
     <div className="container d-flex flex-column align-items-center">
-      <div
-        style={{ height: '50vh', width: '50%' }}
-        className="m-4 border border-2 shadow"
-      >
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyBoQHlU4edUPiQH1TPsRRc2bhtV8nhCAK8' }}
-          defaultCenter={defaultProps.center}
-          defaultZoom={defaultProps.zoom}
-        >
-          {mapPinStops.map((stop) => {
-            return (
-              <MapPin
-                stop={stop}
-                lat={stop.geoPoint.lat}
-                lng={stop.geoPoint.long}
-              />
-            )
-          })}
-        </GoogleMapReact>
-      </div>
+      <Map events={mapPinStops} />
       <div className="d-flex">
         <InputGroup>
           <FormControl
