@@ -13,7 +13,11 @@ const MapPin = ({ stop }) => {
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
       >
-        <img src={pin} alt="" style={{ width: 20 }} />
+        <img
+          src={pin}
+          alt=""
+          style={{ width: 20, position: 'absolute', top: -20, left: -10 }}
+        />
       </div>
       {isShown && (
         <Card className="bg-success text-light z-2" style={{ width: 150 }}>
