@@ -11,6 +11,7 @@ function SearchArtist() {
   const [saveTour, {}] = useMutation(SAVE_TOUR)
   const [events, setEvents] = useState([])
   const [saveEvent, { error }] = useMutation(ADD_EVENT)
+  const [errorMessage, setErrorMessage] = useState('')
 
   const mapTicketMasterEventsToStanzEvents = (ticketmasterEvents = []) => {
     return ticketmasterEvents.map((event) => {
@@ -29,6 +30,8 @@ function SearchArtist() {
   }
 
   const handleSearch = () => {
+    setErrorMessage('')
+    setMapPinStops([])
     const artistSearch = search
     const apiKey = 'sAhXfNPP7Dsqx1w9AFN1cjEu9BEDeqNK'
     const apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${artistSearch}&segmentName=Music&apikey=${apiKey}`
@@ -55,6 +58,7 @@ function SearchArtist() {
       })
       .catch((error) => {
         console.error('Fetch error:', error)
+        setErrorMessage('Tour data not available')
       })
     return
   }
@@ -74,6 +78,7 @@ function SearchArtist() {
   return (
     <div className="container d-flex flex-column align-items-center">
       <Map events={mapPinStops} />
+      {errorMessage && <p className="text-danger fs-6 m-0"> {errorMessage} </p>}
       <div className="d-flex">
         <InputGroup>
           <FormControl
