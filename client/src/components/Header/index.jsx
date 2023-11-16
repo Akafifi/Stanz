@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom'
 
 import Auth from '../../utils/auth'
 
-
 const Header = () => {
-  let loggedInUserId = "";
+  let loggedInUserId = ''
   try {
     loggedInUserId = Auth.getProfile()?.data?._id
   } catch (e) {
-    console.log("Decode failed!");
+    console.log('Decode failed!')
   }
   const logout = (event) => {
     event.preventDefault()
@@ -18,13 +17,13 @@ const Header = () => {
     <header className="bg-dark bg-gradient text-light mb-4 py-3 display-flex align-center">
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
         <Link className="text-light text-decoration-none" to="/">
-          <h1 className="m-0 Got_Heroin" style={{ fontSize: '6rem' }}>
+          <h1 className="m-0 Got_Heroin" style={{ fontSize: '5rem' }}>
             STANz
           </h1>
         </Link>
         <p
           className="m-0 text-light Got_Heroin"
-          style={{ fontSize: '4.75rem', fontWeight: '300' }}
+          style={{ fontSize: '3rem', fontWeight: '300' }}
         >
           FoLLOW THE MUSIC
         </p>
