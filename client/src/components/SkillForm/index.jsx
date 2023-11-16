@@ -1,29 +1,27 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useMutation } from '@apollo/client'
 
-import { ADD_SKILL } from '../../utils/mutations';
-
-import Auth from '../../utils/auth';
+import Auth from '../../utils/auth'
 
 const SkillForm = ({ profileId }) => {
-  const [skill, setSkill] = useState('');
+  const [skill, setSkill] = useState('')
 
-  const [addSkill, { error }] = useMutation(ADD_SKILL);
+  const [addSkill, { error }] = useMutation(ADD_SKILL)
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
       const data = await addSkill({
         variables: { profileId, skill },
-      });
+      })
 
-      setSkill('');
+      setSkill('')
     } catch (err) {
-      console.error(err);
+      console.error(err)
     }
-  };
+  }
 
   return (
     <div>
@@ -61,7 +59,7 @@ const SkillForm = ({ profileId }) => {
         </p>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default SkillForm;
+export default SkillForm

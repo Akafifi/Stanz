@@ -27,6 +27,13 @@ const resolvers = {
 
       return { token, profile };
     },
+    addStop: async (parent, { dateTime, city, venue }) => {
+      const stop = await Stop.create({ city, dateTime, venue });
+
+      return stop
+
+
+    },
     login: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
 
@@ -47,12 +54,19 @@ const resolvers = {
       return Profile.findOneAndDelete({ _id: profileId });
     },
     saveTour: async (parent, { tour }, context) => {
+      // console.log(tour)
       // if (context.user) {
-      const updatedTour = (await Tour.create(tour)).populate('user');
+      const updatedTour = (await Tour.create(tour))
+      const user = await Profile.findByIdAndUpdate(tour.user, { $push: { tours: updatedTour._id } })
       return updatedTour;
       // }
       throw new AuthenticationError('You need to be logged in!');
     },
+    deleteTour: async (parent, { _id }) => {
+      const deletedTour = await Tour.findByIdAndDelete(_id)
+      await Profile.findByIdAndUpdate(deletedTour.user, { $pull: { tours: _id } })
+      return deletedTour
+    }
 
   },
 };

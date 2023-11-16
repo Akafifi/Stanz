@@ -67,8 +67,9 @@ const typeDefs = `
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     saveTour(tour: TourInput!): Tour
-    deleteTour(_id: ID!, tourId: ID!): Tour
+    deleteTour(_id: ID!): Tour
     removeProfile(profileId: ID!): Profile
+    addStop(city: String, dateTime: String, venue: String): Stop
   }
 `;
 
