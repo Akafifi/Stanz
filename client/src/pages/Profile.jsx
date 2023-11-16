@@ -10,6 +10,7 @@ const Profile = () => {
 
   const { loading, data } = useQuery(QUERY_SINGLE_PROFILE, {
     variables: { profileId: profileId },
+    fetchPolicy: 'cache-and-network',
   })
 
   const profile = data?.profile || {}

@@ -18,7 +18,7 @@ const Header = () => {
         </Link>
         <p
           className="m-0 text-dark"
-          style={{ fontSize: '1.75rem', fontWeight: '700' }}
+          style={{ fontSize: '1.5rem', fontWeight: '700' }}
         >
           Follow the Music
         </p>
