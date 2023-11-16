@@ -3,6 +3,7 @@ import { useQuery, useMutation } from '@apollo/client'
 import Map from '../components/Map'
 import { QUERY_SINGLE_PROFILE } from '../utils/queries'
 import { DELETE_TOUR } from '../utils/mutations'
+import { Carousel } from 'react-bootstrap'
 
 const Profile = () => {
   const { profileId } = useParams()
@@ -12,7 +13,7 @@ const Profile = () => {
   })
 
   const profile = data?.profile || {}
-  // console.log(profile)
+  console.log(profile)
 
   const [deleteTour, { error, loading: deleteTourLoading }] = useMutation(
     DELETE_TOUR,
@@ -26,29 +27,40 @@ const Profile = () => {
   }
   return (
     <div>
-      <h1 className="card-header">{profile.name}'s searched tours.</h1>
+      <h1 className="card-header text-center">
+        {profile.name}'s searched tours.
+      </h1>
 
-      <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-        {profile.tours.map((tour) => {
-          return (
-            <>
-              <h2>{tour.artist}</h2>
-              <Map events={tour.stops} />
-              <button
-                className="btn btn-danger"
-                onClick={() => {
-                  deleteTour({
-                    variables: {
-                      _id: tour._id,
-                    },
-                  })
-                }}
-              >
-                {deleteTourLoading ? 'Deleting..' : 'Delete'}
-              </button>
-            </>
-          )
-        })}
+      <div
+        className="my-4 p-4 text-center"
+        style={{ border: '1px dotted #1a1a1a' }}
+      >
+        <div className="row">
+          {profile.tours.map((tour) => {
+            return (
+              <>
+                <div className="col-6 mb-5">
+                  <h2 className="">{tour.artist}</h2>
+                  <div className="container d-flex flex-column align-items-center">
+                    <Map events={tour.stops} />
+                  </div>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => {
+                      deleteTour({
+                        variables: {
+                          _id: tour._id,
+                        },
+                      })
+                    }}
+                  >
+                    {deleteTourLoading ? 'Deleting..' : 'Delete'}
+                  </button>
+                </div>
+              </>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

@@ -11,7 +11,6 @@ import ErrorPage from './pages/Error'
 import SearchArtist from './components/SearchArtist.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 const router = createBrowserRouter([
   {
     path: '/',

@@ -12,7 +12,7 @@ const Map = ({ events = [] }) => {
 
   return (
     <div
-      style={{ height: '50vh', width: '50%' }}
+      style={{ height: '50vh', width: '80%' }}
       className="m-4 border border-2 shadow"
     >
       <GoogleMapReact
