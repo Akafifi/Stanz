@@ -4,10 +4,10 @@ const Footer = () => {
   const location = useLocation()
   const navigate = useNavigate()
   return (
-    <footer className="w-100 mt-auto text-dark p-2 bg-success bg-gradient">
+    <footer className="w-100 mt-auto text-light p-2 bg-dark bg-gradient">
       <div className="container text-center mb-1">
         {location.pathname !== '/' && (
-          <button className="btn btn-dark mb-3" onClick={() => navigate(-1)}>
+          <button className="btn btn-light mb-3" onClick={() => navigate(-1)}>
             &larr; Go Back
           </button>
         )}
