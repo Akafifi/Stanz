@@ -1710,3 +1710,12 @@ label form [type='radio'] {
     align-content: center;
   }
 }
+
+.Got_Heroin {
+  font-family: Got_Heroin;
+}
+
+@font-face {
+  font-family: Got_Heroin;
+  src: url(../public/Got_Heroin.ttf);
+}
