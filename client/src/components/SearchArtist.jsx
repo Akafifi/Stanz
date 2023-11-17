@@ -78,7 +78,7 @@ function SearchArtist() {
   return (
     <div className="container d-flex flex-column align-items-center">
       <Map events={mapPinStops} />
-      {errorMessage && <p className="text-danger fs-6 m-0"> {errorMessage} </p>}
+      {errorMessage && <p className="text-danger fs-6 m-1"> {errorMessage} </p>}
       <div className="d-flex">
         <InputGroup>
           <FormControl
@@ -86,7 +86,7 @@ function SearchArtist() {
             placeholder="Search Artist"
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Button className="bg-success" onClick={() => handleSearch()}>
+          <Button className="bg-dark" onClick={() => handleSearch()}>
             Search
           </Button>
         </InputGroup>
