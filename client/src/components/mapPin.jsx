@@ -20,7 +20,10 @@ const MapPin = ({ stop }) => {
         />
       </div>
       {isShown && (
-        <Card className="bg-success text-light z-2" style={{ width: 150 }}>
+        <Card
+          className="bg-dark bg-gradient text-light z-2"
+          style={{ width: 150 }}
+        >
           <h6 className="text-center p-1"> {stop.venue} </h6>
           <ListGroup className="text-center list-group ">
             <ListGroupItem className="">
